@@ -1,0 +1,31 @@
+server:
+  port: 10001
+  ssl:
+    enabled: true
+    key-store: classpath:discovery-server-store.p12
+    key-store-type: PKCS12
+    key-store-password: yEbg@BZzcr@I0W
+#    key-alias: discovery-server
+
+    trust-store: classpath:discovery-server.truststore
+    trust-store-password: rT8$Lav4k8!yqV
+    trust-store-type: PKCS12
+
+spring:
+  application:
+    name: discovery-server
+  config:
+    import: optional:configserver:http://localhost:10004/
+  security:
+    user:
+      name: default_user
+      password: user_pass2002
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+
+logging:
+  level.com.netflix.eureka: OFF
+  level.com.netflix.discovery: OFF
