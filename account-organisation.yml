@@ -1,0 +1,35 @@
+server:
+  port: 10013
+  ssl:
+    enabled: true
+    client-auth: need
+    key-alias: account-orga-store
+    key-store-password: eEAHbPdh@PCYieHi
+    key-store: classpath:keystore.p12
+    key-store-type: JKS
+    trust-store-type: PKCS12
+    trust-store-password: zPqdWagQ_b67yBc#
+    trust-store: classpath:ca.truststore
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: https://localhost:10003/eureka/
+
+spring:
+  application:
+    name: account-organisation
+  config:
+    import: optional:configserver:https://localhost:10004/
+  datasource:
+    url: jdbc:mysql://localhost:3306/db_organisation?createDatabaseIfNotExist=true&serverTimezone=UTC
+    username: root
+    password:
+    generate-unique-name: false
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+      naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+    open-in-view: true
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+

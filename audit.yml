@@ -1,0 +1,27 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: https://localhost:10003/eureka/
+spring:
+  application:
+    name: audit
+    config:
+      import: optional:configserver:https://localhost:10004/
+  data:
+    mongodb:
+      uri: mongodb://localhost/afripkay_audit
+      database: audit
+
+server:
+  port: 10010
+  ssl:
+    enabled: true
+    client-auth: need
+    key-alias: audit-store
+    key-store-password: wDCBFYHzkQF##n97
+    key-store: classpath:keystore.p12
+    key-store-type: JKS
+    trust-store-type: PKCS12
+    trust-store-password: w_hjgdFOB5q5HF9B
+    trust-store: classpath:ca.truststore
+

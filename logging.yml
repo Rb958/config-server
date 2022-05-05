@@ -1,0 +1,22 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: https://localhost:10003/eureka/
+spring:
+  application:
+    name: logging
+    config:
+      import: optional:configserver:http://localhost:10004/
+server:
+  port: 10011
+  ssl:
+    enabled: true
+    client-auth: need
+    key-alias: logging-store
+    key-store-password: IBfN@LoCMKr5Kwpp
+    key-store: classpath:keystore.p12
+    key-store-type: JKS
+    trust-store-type: PKCS12
+    trust-store-password: MGJiERVjEfl@Mkfr
+    trust-store: classpath:ca.truststore
+

@@ -1,0 +1,34 @@
+server:
+  port: 10016
+  ssl:
+    enabled: true
+    client-auth: need
+    key-alias: ussd-gateway-store
+    key-store-password: GyC5XaEpiymw4aA4
+    key-store: classpath:keystore.p12
+    key-store-type: JKS
+    trust-store-type: PKCS12
+    trust-store-password: knD9ErE8DuxTgPCG
+    trust-store: classpath:ca.truststore
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: https://localhost:10003/eureka/
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost/advans_ussd?serverTimezone=UTC
+    username:
+    password:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    testWhileIdle: true
+  jpa:
+    hibernate:
+      ddl-auto: update
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyHbmImpl
+        physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
+    properties:
+      - hibernate:
+          dialect: org.hibernate.dialect.MySQL5InnoDBDialect
