@@ -24,4 +24,5 @@ server:
     trust-store-type: PKCS12
     trust-store-password: w_hjgdFOB5q5HF9B
     trust-store: classpath:ca.truststore
+truststore-password: w_hjgdFOB5q5HF9B
 
