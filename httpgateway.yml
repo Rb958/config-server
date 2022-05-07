@@ -36,7 +36,7 @@ spring:
             - audit-ca-rootCA.crt
             - config-service-ca-rootCA.crt
             - discovery-ca-rootCA.crt
-            - enrollement-ca-rootCA.crt
+            - enrolment-ca-rootCA.crt
             - logging-ca-rootCA.crt
             - ussd-gateway-ca-rootCA.crt
       routes:
