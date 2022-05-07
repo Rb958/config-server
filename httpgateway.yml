@@ -1,5 +1,5 @@
 server:
-  port: 10003
+  port: 10002
 #  ssl:
 #    enabled: true
 #    protocol: TLS
@@ -15,7 +15,7 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: https://{host}:10003/eureka/
+      defaultZone: https://localhost:10003/eureka/
 spring:
   application:
     name: httpgateway
