@@ -1,7 +1,7 @@
 eureka:
   client:
     serviceUrl:
-      defaultZone: https://default_user:user_pass2002@localhost:10003/eureka/
+      defaultZone: https://localhost:10003/eureka/
 spring:
   application:
     name: audit
