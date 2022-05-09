@@ -1,16 +1,16 @@
 server:
   port: 10003
-  ssl:
-    enabled: true
-    protocol: TLS
-    client-auth: need
-    key-store-password: wDCBFYHzkQF##n97
-    key-store: classpath:keystore.p12
-    key-alias: discovery-store
-    key-store-type: JKS
-    trust-store: classpath:ca.truststore
-    trust-store-type: PKCS12
-    trust-store-password: w_hjgdFOB5q5HF9B
+#   ssl:
+#     enabled: true
+#     protocol: TLS
+#     client-auth: need
+#     key-store-password: wDCBFYHzkQF##n97
+#     key-store: classpath:keystore.p12
+#     key-alias: discovery-store
+#     key-store-type: JKS
+#     trust-store: classpath:ca.truststore
+#     trust-store-type: PKCS12
+#     trust-store-password: w_hjgdFOB5q5HF9B
 
 spring:
   application:
