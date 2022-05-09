@@ -13,6 +13,15 @@ server:
 
 eureka:
   client:
+    tls:
+      enabled: true
+      key-store-password: GyC5XaEpiymw4aA4
+      key-store: classpath:keystore.p12
+      key-store-type: JKS
+      key-password: iHBA_CtpuEBE@Oty
+      trust-store-type: PKCS12
+      trust-store-password: knD9ErE8DuxTgPCG
+      trust-store: classpath:ca.truststore
     serviceUrl:
       defaultZone: https://localhost:10003/eureka/
 
