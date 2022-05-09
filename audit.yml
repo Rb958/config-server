@@ -4,10 +4,10 @@ eureka:
       enabled: true
       key-store: classpath:keystore.p12
       key-store-type: PKCS12
-      key-store-password: gxykIWln1VCgzdHX
+      key-store-password: wDCBFYHzkQF##n97
       trust-store: classpath:ca.truststore
       trust-store-type: PKCS12
-      trust-store-password: RyZ9I5YqVB4HrrlD
+      trust-store-password: w_hjgdFOB5q5HF9B
     serviceUrl:
       defaultZone: https://default_user:user_pass2002@localhost:10003/eureka/
 spring:
