@@ -29,15 +29,20 @@ spring:
   application:
     name: ussdgateway
   datasource:
-    url: jdbc:mysql://localhost/advans_ussd?serverTimezone=UTC
-    username:
-    password:
     driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    url: jdbc:mysql://localhost/advans_ussd?serverTimezone=UTC
     testWhileIdle: true
+    validationQuery: SELECT 1
+    password: cm-uds-15sci0973
   jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
     hibernate:
-      ddl-auto: update
       naming:
         implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyHbmImpl
         physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
-spring.jpa.properties.hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
+      ddl-auto: update
+    show-sql: true
+serverTimeZone: UTC
