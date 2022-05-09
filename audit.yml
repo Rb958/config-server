@@ -4,7 +4,7 @@ eureka:
       enabled: true
       key-store: classpath:keystore.p12
       key-store-type: PKCS12
-      key-store-password: gxykIWln1VCgzdHX
+      key-store-password: RyZ9I5YqVB4HrrlD
       key-password: iHBA_CtpuEBE@Oty
       trust-store: classpath:ca.truststore
       trust-store-type: PKCS12
