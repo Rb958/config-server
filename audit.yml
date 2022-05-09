@@ -5,7 +5,7 @@ eureka:
       key-store-password: wDCBFYHzkQF##n97
       key-store: classpath:keystore.p12
       key-password: iHBA_CtpuEBE@Oty
-      key-store-type: JKS
+      key-store-type: PKCS12
       trust-store-type: PKCS12
       trust-store-password: w_hjgdFOB5q5HF9B
       trust-store: classpath:ca.truststore
