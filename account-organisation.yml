@@ -11,10 +11,10 @@ server:
 #     trust-store-password: zPqdWagQ_b67yBc#
 #     trust-store: classpath:ca.truststore
 
-# eureka:
-#   client:
-#     serviceUrl:
-#       defaultZone: https://default_user:user_pass2002@localhost:10003/eureka/
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://default_user:user_pass2002@localhost:10003/eureka/
 
 spring:
   application:
