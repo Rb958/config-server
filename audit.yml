@@ -2,11 +2,11 @@ eureka:
   client:
     tls:
       enabled: true
-      key-store: keystore.p12
+      key-store: classpath:keystore.p12
       key-store-type: PKCS12
       key-store-password: gxykIWln1VCgzdHX
       key-password: iHBA_CtpuEBE@Oty
-      trust-store: ca.truststore
+      trust-store: classpath:ca.truststore
       trust-store-type: PKCS12
       trust-store-password: gxykIWln1VCgzdHX
     serviceUrl:
