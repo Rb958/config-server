@@ -23,7 +23,7 @@ eureka:
 #       trust-store-password: knD9ErE8DuxTgPCG
 #       trust-store: classpath:ca.truststore
     serviceUrl:
-      defaultZone: http://localhost:10003/eureka/
+      defaultZone: http://default_user:user_pass2002@localhost:10003/eureka/
 
 spring:
   application:
