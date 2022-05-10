@@ -13,28 +13,28 @@ server:
 
 eureka:
   client:
-    tls:
-      enabled: true
-      key-store-password: GyC5XaEpiymw4aA4
-      key-store: classpath:keystore.p12
-      key-store-type: JKS
-      key-password: iHBA_CtpuEBE@Oty
-      trust-store-type: PKCS12
-      trust-store-password: knD9ErE8DuxTgPCG
-      trust-store: classpath:ca.truststore
+#     tls:
+#       enabled: true
+#       key-store-password: GyC5XaEpiymw4aA4
+#       key-store: classpath:keystore.p12
+#       key-store-type: JKS
+#       key-password: iHBA_CtpuEBE@Oty
+#       trust-store-type: PKCS12
+#       trust-store-password: knD9ErE8DuxTgPCG
+#       trust-store: classpath:ca.truststore
     serviceUrl:
-      defaultZone: https://localhost:10003/eureka/
+      defaultZone: http://localhost:10003/eureka/
 
 spring:
   application:
     name: ussdgateway
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    username: root
-    url: jdbc:mysql://localhost:3306/advans_ussd?serverTimezone=UTC
+    username: paymentgateway
+    url: jdbc:mysql://localhost:3306/pg_ussdgateway?serverTimezone=UTC
     testWhileIdle: true
     validationQuery: SELECT 1
-    password: cm-uds-15sci0973
+    password: oEij4yKJOMlUHGMe
   jpa:
     properties:
       hibernate:
