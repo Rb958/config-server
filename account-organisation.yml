@@ -22,9 +22,9 @@ spring:
   config:
     import: optional:configserver:https://localhost:10004/
   datasource:
-    url: jdbc:mysql://localhost:3306/db_organisation?createDatabaseIfNotExist=true&serverTimezone=UTC
-    username: root
-    password:
+    url: jdbc:mysql://localhost:3306/pg_organisation?createDatabaseIfNotExist=true&serverTimezone=UTC
+    username: paymentgateway
+    password: oEij4yKJOMlUHGMe
     generate-unique-name: false
   jpa:
     hibernate:
