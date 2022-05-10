@@ -1,15 +1,15 @@
 server:
   port: 10013
-#   ssl:
-#     enabled: true
-#     client-auth: need
-#     key-alias: account-orga-store
-#     key-store-password: eEAHbPdh@PCYieHi
-#     key-store: classpath:keystore.p12
-#     key-store-type: JKS
-#     trust-store-type: PKCS12
-#     trust-store-password: zPqdWagQ_b67yBc#
-#     trust-store: classpath:ca.truststore
+  ssl:
+    enabled: true
+    client-auth: need
+    key-alias: account-orga-store
+    key-store-password: eEAHbPdh@PCYieHi
+    key-store: classpath:keystore.p12
+    key-store-type: JKS
+    trust-store-type: PKCS12
+    trust-store-password: zPqdWagQ_b67yBc#
+    trust-store: classpath:ca.truststore
 
 eureka:
   client:
