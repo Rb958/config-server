@@ -41,7 +41,7 @@ spring:
             - ussd-gateway-ca-rootCA.crt
       routes:
         - id: audit
-          uri: lb://audit:10010
+          uri: https://localhost:10010
           predicates:
             - Path=/auditsrv/**
           filters:
