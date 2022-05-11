@@ -1,7 +1,7 @@
 eureka:
   client:
     serviceUrl:
-      defaultZone: https://localhost:10003/eureka/
+      defaultZone: http://default_user:user_pass2002@localhost:10003/eureka/
 spring:
   application:
     name: logging
