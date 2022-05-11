@@ -18,7 +18,7 @@ eureka:
 
 spring:
   application:
-    name: souscription
+    name: account_subscription
   config:
     import: configserver:https://localhost:10004/
   datasource:
