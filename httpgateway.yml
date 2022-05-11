@@ -40,10 +40,10 @@ spring:
             - logging-ca-rootCA.crt
             - ussd-gateway-ca-rootCA.crt
       routes:
-        - id: Microservice1
-          uri: https://localhost:10010
-          predicates:
-            - Path=/auditsrv/**
-          filters:
-#            - EncryptDecryptFilter
-            - RewritePath=/auditsrv(?<segment>/?.*), $\{segment}
+        - id: audit
+          uri: lb://audit:10010
+#           predicates:
+#             - Path=/auditsrv/**
+#           filters:
+# #            - EncryptDecryptFilter
+#             - RewritePath=/auditsrv(?<segment>/?.*), $\{segment}
