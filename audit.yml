@@ -15,7 +15,7 @@ spring:
   application:
     name: audit
     config:
-      import: optional:configserver:https://localhost:10004/
+      import: configserver:https://localhost:10004/
   data:
     mongodb:
       uri: mongodb://localhost/afripkay_audit

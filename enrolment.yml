@@ -1,0 +1,34 @@
+server:
+  port: 10012
+  ssl:
+    enabled: true
+    client-auth: need
+    key-alias: enrolment-store
+    key-store-password: r4T#OP@#Ybf1M_vN
+    key-store: classpath:keystore.p12
+    key-store-type: JKS
+    trust-store-type: PKCS12
+    trust-store-password: jJ_ZfxLlV##WweGk
+    trust-store: classpath:ca.truststore
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://default_user:user_pass2002@localhost:10003/eureka/
+
+spring:
+  application:
+    name: enrolment
+  config:
+    import: configserver:https://localhost:10004/
+  datasource:
+    url: jdbc:mysql://localhost:3306/pg_enrolment?createDatabaseIfNotExist=true&serverTimezone=UTC&verifyServerCertificate=false&useSSL=true&requireSSL=true&clientCertificateKeyStoreUrl=file:dbkeystore.p12&clientCertificateKeyStorePassword=2hIDML8pPnli1jTs&trustCertificateKeyStoreUrl=file:db-ca.truststore&trustCertificateKeyStorePassword=mVV6eXFudmqORAoU
+    username: paymentgateway
+    password: oEij4yKJOMlUHGMe
+    generate-unique-name: false
+  jpa:
+    hibernate:
+      ddl-auto: update
+      naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+    open-in-view: true
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
