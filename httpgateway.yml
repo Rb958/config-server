@@ -42,8 +42,8 @@ spring:
       routes:
         - id: audit
           uri: lb://audit:10010
-#           predicates:
-#             - Path=/auditsrv/**
-#           filters:
-# #            - EncryptDecryptFilter
-#             - RewritePath=/auditsrv(?<segment>/?.*), $\{segment}
+          predicates:
+            - Path=/auditsrv/**
+          filters:
+#            - EncryptDecryptFilter
+            - RewritePath=/auditsrv(?<segment>/?.*), $\{segment}
