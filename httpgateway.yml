@@ -47,3 +47,10 @@ spring:
           filters:
 #            - EncryptDecryptFilter
             - RewritePath=/auditsrv(?<segment>/?.*), $\{segment}
+        - id: config
+          uri: https://localhost:10004
+          predicates:
+            - Path=/configsrv/**
+          filters:
+#            - EncryptDecryptFilter
+            - RewritePath=/configsrv(?<segment>/?.*), $\{segment}
