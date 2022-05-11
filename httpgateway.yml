@@ -75,3 +75,10 @@ spring:
           filters:
 #            - EncryptDecryptFilter
             - RewritePath=/subscriptionsrv(?<segment>/?.*), $\{segment}
+        - id: account-services
+          uri: https://localhost:10014
+          predicates:
+            - Path=/servicessrv/**
+          filters:
+#            - EncryptDecryptFilter
+            - RewritePath=/servicessrv(?<segment>/?.*), $\{segment}
