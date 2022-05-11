@@ -3,10 +3,10 @@ server:
   ssl:
     enabled: true
     client-auth: need
-    key-alias: account-orga-store
+    key-alias: account-organisation-storee
     key-store-password: eEAHbPdh@PCYieHi
     key-store: classpath:keystore.p12
-    key-store-type: JKS
+    key-store-type: PKCS12
     trust-store-type: PKCS12
     trust-store-password: zPqdWagQ_b67yBc#
     trust-store: classpath:ca.truststore
