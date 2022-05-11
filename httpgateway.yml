@@ -54,3 +54,24 @@ spring:
           filters:
 #            - EncryptDecryptFilter
             - RewritePath=/configsrv(?<segment>/?.*), $\{segment}
+        - id: account-organisation
+          uri: https://localhost:10013
+          predicates:
+            - Path=/organisationsrv/**
+          filters:
+#            - EncryptDecryptFilter
+            - RewritePath=/organisationsrv(?<segment>/?.*), $\{segment}
+        - id: logging
+          uri: https://localhost:10011
+          predicates:
+            - Path=/loggingsrv/**
+          filters:
+#            - EncryptDecryptFilter
+            - RewritePath=/loggingsrv(?<segment>/?.*), $\{segment}
+        - id: subscription
+          uri: https://localhost:10017
+          predicates:
+            - Path=/subscriptionsrv/**
+          filters:
+#            - EncryptDecryptFilter
+            - RewritePath=/subscriptionsrv(?<segment>/?.*), $\{segment}
