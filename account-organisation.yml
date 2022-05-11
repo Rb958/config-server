@@ -22,7 +22,7 @@ spring:
   config:
     import: optional:configserver:https://localhost:10004/
   datasource:
-    url: jdbc:mysql://localhost:3306/pg_organisation?createDatabaseIfNotExist=true&serverTimezone=UTC
+    url: jdbc:mysql://localhost:3306/pg_organisation?createDatabaseIfNotExist=true&serverTimezone=UTC&verifyServerCertificate=false&useSSL=true&requireSSL=true&clientCertificateKeyStoreUrl=file:dbkeystore.p12&clientCertificateKeyStorePassword=mVV6eXFudmqORAoU&trustCertificateKeyStoreUrl=file:db-ca.truststore&trustCertificateKeyStorePassword=2hIDML8pPnli1jTs
     username: paymentgateway
     password: oEij4yKJOMlUHGMe
     generate-unique-name: false
