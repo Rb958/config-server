@@ -3,7 +3,7 @@ server:
   ssl:
     enabled: true
     client-auth: need
-    key-alias: account-organisation-storee
+    key-alias: account-organisation-store
     key-store-password: eEAHbPdh@PCYieHi
     key-store: classpath:keystore.p12
     key-store-type: PKCS12
