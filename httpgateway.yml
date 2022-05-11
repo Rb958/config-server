@@ -15,7 +15,7 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: https://localhost:10003/eureka/
+      defaultZone: http://localhost:10003/eureka/
 spring:
   application:
     name: httpgateway
