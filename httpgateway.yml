@@ -19,8 +19,6 @@ eureka:
 spring:
   application:
     name: httpgateway
-    config:
-      import: optional:configserver:https://localhost:10004/
   cloud:
     gateway:
       httpclient:

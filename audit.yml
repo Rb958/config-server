@@ -14,8 +14,6 @@ eureka:
 spring:
   application:
     name: audit
-    config:
-      import: configserver:https://localhost:10004/
   data:
     mongodb:
       uri: mongodb://localhost/afripkay_audit

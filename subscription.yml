@@ -5,8 +5,6 @@ eureka:
 spring:
   application:
     name: subscription
-    config:
-      import: configserver:http://localhost:10004/
 server:
   port: 10011
   ssl:
