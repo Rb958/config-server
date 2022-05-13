@@ -20,5 +20,5 @@ server:
 
 syslog:
   host: localhost
-  port: 6514
+  port: 514
   facility: LOCAL0
