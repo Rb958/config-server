@@ -18,3 +18,7 @@ server:
     trust-store-password: MGJiERVjEfl@Mkfr
     trust-store: classpath:ca.truststore
 
+syslog:
+  host: localhost
+  port: 6514
+  facility: LOCAL0
