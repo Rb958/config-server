@@ -20,7 +20,7 @@ spring:
   application:
     name: account-service
   datasource:
-    url: jdbc:mysql://localhost:3306/pg_service?createDatabaseIfNotExist=true&serverTimezone=UTC&verifyServerCertificate=false&useSSL=true&requireSSL=true&clientCertificateKeyStoreUrl=file:dbkeystore.p12&clientCertificateKeyStorePassword=2hIDML8pPnli1jTs&trustCertificateKeyStoreUrl=file:db-ca.truststore&trustCertificateKeyStorePassword=mVV6eXFudmqORAoU
+    url: jdbc:sqlserver://10.10.104.2;databaseName=pg_service?createDatabaseIfNotExist=true&serverTimezone=UTC&verifyServerCertificate=false&useSSL=true&requireSSL=true&clientCertificateKeyStoreUrl=file:dbkeystore.p12&clientCertificateKeyStorePassword=2hIDML8pPnli1jTs&trustCertificateKeyStoreUrl=file:db-ca.truststore&trustCertificateKeyStorePassword=mVV6eXFudmqORAoU
     username: afrikpay1 #paymentgateway
     password: Afrikpay@2022 #oEij4yKJOMlUHGMe
   jpa:
@@ -28,6 +28,6 @@ spring:
       ddl-auto: create-drop
       naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
     open-in-view: true
-    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    database-platform: org.hibernate.dialect.SQLServer2012Dialect #org.hibernate.dialect.MySQL5InnoDBDialect
 
 
